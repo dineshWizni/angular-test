@@ -1,0 +1,60 @@
+<div class="detail-container">
+    <div class="table">
+        <div class="row bgrowgray">
+            <div class="cell bgbold">Incident Reference</div>
+            <div class="cell text-center">{{detail.reference}}</div>
+        </div>
+        <div class="row">
+            <div class="cell bgbold">Incident Date</div>
+            <div class="cell text-center">{{detail.incidentDate | date:"dd/MM/yyyy"}}</div>
+        </div>
+        <div class="row bgrowgray">
+            <div class="cell bgbold">Incident Location</div>
+            <div class="cell text-center">{{detail.incidentLocation}}</div>
+        </div>
+        <div class="row">
+            <div class="cell bgbold">Policyholder Name</div>
+            <div class="cell text-center">{{detail.policyholderName}}</div>
+        </div>
+        <div class="row bgrowgray">
+            <div class="cell bgbold">Vehicle Registration</div>
+            <div class="cell text-center">{{detail.vehicleRegistration}}</div>
+        </div>
+        <div class="row">
+            <div class="cell bgbold">Driver Name</div>
+            <div class="cell text-center">{{detail.driverName}}</div>
+        </div>
+        <div class="row bgrowgray">
+            <div class="cell bgbold">Present Position</div>
+            <div class="cell text-center">{{detail.presentPosition}}</div>
+        </div>
+        <div class="row">
+            <div class="cell bgbold">Policy Holder Admits Liability</div>
+            <div class="cell text-center">{{detail.phAdmitsLiability}}</div>
+        </div>
+        <div class="row bgrowgray">
+            <div class="cell bgbold">Cause Type Description</div>
+            <div class="cell text-center"></div>
+        </div>
+        <div class="row">
+            <div class="cell width40">{{detail.causeTypeDescription}}</div>
+            <div class="cell text-center"></div>
+        </div>
+        <div class="row bgrowgray">
+            <div class="cell bgbold">Fault Assessment</div>
+            <div class="cell text-center"></div>
+        </div>
+        <div class="row">
+            <div class="cell width40">{{detail.faultAssessment}}</div>
+            <div class="cell text-center"></div>
+        </div>
+        <div class="row bgrowgray">
+            <div class="cell bgbold">Incident Description</div>
+            <div class="cell text-center"></div>
+        </div>
+        <div class="row">
+            <div class="cell width40">{{detail.incidentDescription}}</div>
+            <div class="cell text-center"></div>
+        </div>
+    </div>
+</div>

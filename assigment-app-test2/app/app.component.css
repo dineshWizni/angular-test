@@ -1,0 +1,32 @@
+.text-center{
+    text-align:center
+}
+.container-head{
+    height:70px;
+    border-bottom:2px solid #efefef;
+    margin-bottom:10px;
+}
+.h1-class{
+    letter-spacing:0px;   
+}
+a{
+    font-size:14px;
+    color:#1e5f8d;
+    background-color:#007bff;
+    display:inline-block;
+    width:120px;
+    padding:5px;
+    border-radius:4px;
+    color:white;
+}
+a:hover{
+    background-color:#3678e2;
+}
+nav a:last-child{
+    margin-left:20px;
+}
+.middle-container{
+    margin:auto;
+    width:50%;
+    border:2px solid #efefef;
+}

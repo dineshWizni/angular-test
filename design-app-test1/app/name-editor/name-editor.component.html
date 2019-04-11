@@ -1,0 +1,18 @@
+<div class="container">
+    <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+            <div id="login-box" class="col-md-12">
+                <form id="login-form" class="form" [formGroup]="detailForm" (ngSubmit)="onDetailFormSubmit()">
+                    <div *ngFor="let fieldBase of fieldBases" class="form-group">
+                        <input type={{fieldBase.type}} formControlName={{fieldBase.name}} class="form-control" placeholder={{fieldBase.label}} required/>
+                    </div>
+                    <div id="search-button-box" class="col-md-12">
+                            <button type="submit" class="btn btn-lg btn-primary btn-search" [disabled]="!detailForm.valid"><i class="fa fa-search" ></i>Search</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+

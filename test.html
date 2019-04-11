@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Design</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+	
+	<style type="text/css">
+		body{
+			margin:0;
+			padding:0;
+			background-color:#333333;
+		}
+		.bg-ylw{
+			background-color:#F47820;
+		}
+		#login .container #login-row #login-column #login-box{
+			margin-top:12px;
+			max-width:600px;
+			height:320px;
+			border:1px solid transparent;
+			background-color:#333333;
+		}
+		#login .container #login-row #login-column #login-box #login-form{
+			padding:20px;
+		}
+		#login .container #login-row #login-column #login-box #login-form #register-link{
+			margin-top:-85px;
+		}
+
+		#login-box .form-control{
+			margin-top:40px;
+			border:none;
+			border-radius:0px;
+			background-color:#333333;
+			border-bottom:1px solid #F47820;
+			padding-left:0px;
+			color:#F47820;
+		}
+		#login-form .form-control:focus{
+			color:#F47820;
+			box-shadow:none;
+		}
+		#login-box .form-control::placeholder{
+			color:#F47820;
+		}
+		input[type="date"] {
+  			position: relative;
+  			padding: 10px;
+		}
+
+		input[type="date"]::-webkit-calendar-picker-indicator {
+  			color: transparent;
+  			background: none;
+  			z-index: 1;
+		}
+
+		input[type="date"]:before {
+  			color: transparent;
+  			background: none;
+  			display: block;
+  			font-family: 'FontAwesome';
+  			content: '\f073';
+  			/* This is the calendar icon in FontAwesome */
+  			width: 15px;
+  			height: 20px;
+  			position: absolute;
+			top: 12px;
+			right: 6px;
+			color: #F47820;
+		}
+		.btn-search{
+			width:100%;
+			background-color:#F47820;
+			border:none;
+		}
+		.btn-primary.btn-search:hover{
+			background-color:#F47820;	
+			border-color:transparent;
+		}
+		.btn-primary.btn-search:focus{
+			box-shadow:none;
+		}
+		.btn-primary.btn-search:active{
+			border:none;	
+			box-shadow:none;
+			border-color:transparent;
+			background-color:#F47820;
+		}
+		.btn-primary.btn-search:not(:disabled):not(.disabled):active{
+			background-color:#f4ee42;
+			box-shadow:none;
+			border:1px solid transparent;
+		}
+
+	</style>
+</head>
+<body>
+
+<div id="login">
+	<h3 class="text-center text-white bg-ylw">
+		<div class="pt-3 pb-3">Search</div>
+	</h3>
+	<div class="container">
+			<div id="login-row" class="row justify-content-center align-items-center">
+				<div id="login-column" class="col-md-6">
+						<div id="login-box" class="col-md-12">
+							<form id="login-form" class="form">
+								<div class="form-group">
+									<input type="text" name="firstName" id="firstName" class="form-control" placeholder="First Name"/>
+								</div>
+								<div class="form-group">
+									<input type="date" name="dateOfBirth" id="dateOfBirth" class="form-control" placeholder="Date Of Birth"/>
+								</div>
+								<div class="form-group">
+									<input type="number" name="policyNumber" id="policyNumber" class="form-control" placeholder="Policy Number"/>
+								</div>
+							</form>
+						</div>
+						<div id="search-button-box" class="col-md-12">
+							<button type="button" class="btn btn-lg btn-primary btn-search"><i class="fa fa-search"></i>Search</button>
+						</div>
+				</div>
+			</div>
+	</div>
+</div>
+
+</body>
+</html>
+

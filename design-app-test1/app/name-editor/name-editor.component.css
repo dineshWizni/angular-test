@@ -1,0 +1,78 @@
+#login .container #login-row #login-column #login-box{
+    margin-top:12px;
+    max-width:600px;
+    height:320px;
+    border:1px solid transparent;
+    background-color:#333333;
+}
+#login .container #login-row #login-column #login-box #login-form{
+    padding:20px;
+}
+#login-box .form-control{
+    margin-top:40px;
+    border:none;
+    border-radius:0px;
+    background-color:#333333;
+    border-bottom:1px solid #F47820;
+    padding-left:0px;
+    color:#F47820;
+}
+#login-form .form-control:focus{
+    color:#F47820;
+    box-shadow:none;
+}
+#login-box .form-control::placeholder{
+    color:#F47820;
+}
+input[type="date"] {
+      position: relative;
+      padding: 10px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+      color: transparent;
+      background: none;
+      z-index: 1;
+}
+
+input[type="date"]:before {
+      color: transparent;
+      background: none;
+      display: block;
+      font-family: 'FontAwesome';
+      content: '\f073';
+      /* This is the calendar icon in FontAwesome */
+      width: 15px;
+      height: 20px;
+      position: absolute;
+    top: 12px;
+    right: 6px;
+    color: #F47820;
+}
+.btn-search{
+    width:100%;
+    background-color:#F47820;
+    border:none;
+}
+.btn-primary.btn-search:hover{
+    background-color:#F47820;	
+    border-color:transparent;
+}
+.btn-primary.btn-search:focus{
+    box-shadow:none;
+}
+.btn-primary.btn-search:active{
+    border:none;	
+    box-shadow:none;
+    border-color:transparent;
+    background-color:#F47820;
+}
+.btn-primary.btn-search:not(:disabled):not(.disabled):active{
+    background-color:#f4ee42;
+    box-shadow:none;
+    border:1px solid transparent;
+}
+#search-button-box{
+    padding-right:0px;
+    padding-left:0px;
+}
